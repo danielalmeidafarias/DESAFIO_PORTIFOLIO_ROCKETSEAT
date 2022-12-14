@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;600&display=swap');
+
+/* Resetando CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+* {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #22212C;
+}
+/*
+    ETAPAS
+        I - Header
+            1 - div.perfil
+            2 - div.inf/redes-pessoais
+            3 - div.tecnologias
+            4 - div.experiencias
+            5 - div.educacao
+
+        II - Main
+            1 - div.meusprojetos
+            2 - div.projetos
+            3 - div.postsrecentes
+            4 - div.ultimopost
+
+        III - Footer
+            1 - div.meunome
+*/
+
+
+/* ETAPA I-1 */
+
+
+footer p {
+    color: #a4a2b1;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo {
+    display: flex;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-left: -30px;
+}
+
+.perfil {
+    background-color: #302F3D;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 348px;
+    height: 292px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px #18181f;
+    margin-bottom: 30px;
+}
+
+.perfil .imagem-perfil {
+    width: 140px;
+    height: 140px;
+    margin: 30px;
+    margin-bottom: 10px;
+}
+
+.perfil .foto-perfil {
+    background-color: transparent;
+    height: 128px;
+    width: 128px;   
+    border-radius: 50%;
+    position: absolute;
+    border: 2.5px solid #a4a2b1;
+}
+
+.perfil .nome-perfil {
+    background-color: transparent;
+    color: #a4a2b1;
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    word-spacing: -7px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
+
+.perfil .profissao {
+    background-color: transparent;
+    color: #837E9F;
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+
+/* ETAPA I-2 */ 
+
+.inf-redes-pessoais {
+    width: 348px;
+    height: 348px;
+    background-color: #302F3D;
+    border-radius: 12px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: 3px 3px 3px #18181f;
+    margin-bottom: 30px;
+    font-size: 15px;
+}   
+
+.inf-redes-pessoais li {
+    margin: 12px;
+    text-decoration: none;
+    word-spacing: 12px;
+}
+
+.inf-redes-pessoais ul {
+    list-style: none;
+}
+
+.inf-redes-pessoais .pais {
+    margin-top: 6px;
+}
+
+.inf-redes-pessoais p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
+.inf-redes-pessoais a {
+    color: #a4a2b1;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+/* ETAPA I-3 */
+
+.tecnologias {
+    background-color: #302F3D;
+    width: 348px;
+    height: 208px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px #18181f;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.tecnologias h3 {
+    color: #a4a2b1;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.tecnologias p {
+    background-color: #CB92B1;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase;
+    margin: 8px;
+    letter-spacing: -1px;
+}
+
+
+
+.tecnologias .itens-tecnologias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.tecnologias .linha1-tecnologias {
+    display: flex;
+    text-align: center;
+}
+
+.tecnologias .linha2-tecnologias {
+    display: flex;
+}
+
+
+/* ETAPA I-4 */
+
+.experiencias {
+    background-color: #302F3D;
+    width: 348px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px #18181f;
+    margin-bottom: 30px;
+}
+
+.experiencias .titulo-experiencias h3{
+    color: #a4a2b1;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.experiencias .conteudo-experiencias p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 18px;
+    color: #837E9F;
+    margin-top: 10px;
+}
+
+.experiencias .conteudo-experiencias ul {
+    color: #837E9F; 
+    margin-left: 50px;
+}
+
+/* ETAPA I-5 */
+
+.educacao {
+    background-color: #302F3D;
+    width: 348px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px #18181f;
+    display: flex;
+    flex-direction: column;
+}   
+
+.educacao .titulo-educacao h3 {
+    color: #a4a2b1;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.educacao li p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #837E9F;
+    margin-bottom: 15px;
+}
+
+.educacao li h3 {
+    font-family: 'Merriweather Sans';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #837E9F;
+}
+
+.educacao .conteudo-educacao {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 18px;
+    color: #837E9F;
+    margin-top: 20px;
+}
+
+.educacao .conteudo-educacao ul {
+    color: #837E9F; 
+    margin-left: 50px;
+}
+
+
+/* ETAPA II-1 */
+
+.meusprojetos {
+    background-color: #302F3D;
+    width: 952px;
+    height: 86px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #18181f;   
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.meusprojetos h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
+    color: #a4a2b1;
+    word-spacing: -5px;
+
+}
+
+.meusprojetos p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 1px;
+    line-height: 18px;
+    color: #837E9F;
+}
+
+/* ETAPA II-2 */
+
+.projetos {
+    box-sizing: border-box;
+    width: 952px;
+    height: 186px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    color: #837E9F
+}
+
+.projetos a {
+    text-decoration: none;
+}
+
+
+
+.projetos .titulo {
+    color: #a4a2b1;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.projeto1 {
+    background-color: #302F3D;
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px #18181f;  
+    width: 461px;
+    height: 186px;
+    padding: 15px;
+}
+
+.titulo-projeto1 {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.descricao-projeto1 p{
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+
+.botoes-projeto1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0px;
+    margin: 10px;
+}
+
+.botoes-botoes-projeto1 {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.estrela-projeto1 {
+    display: flex;
+}
+
+.compartilhamentogitprojeto1 {
+    display: flex;
+}
+
+.tecnologias-projeto1 p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    color: #a4a2b1;
+}
+
+
+.tecnologias-projeto2 p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    color: #a4a2b1;
+}
+
+.projeto2 {
+    background-color: #302F3D;
+    border-radius: 16px;
+    box-shadow: 3px 3px 3px #18181f;  
+    width: 461px;
+    height: 186px;
+    padding: 15px;
+}
+
+.projeto2 a {
+    color: #837E9F;
+    text-decoration: none;
+    font-style: bold;
+    font-weight: 700;
+}
+
+
+.titulo-projeto2 {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.descricao-projeto2 p{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.botoes-projeto2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0px;
+    margin: 10px;
+}
+
+.botoes-botoes-projeto2 {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+}
+
+.estrela-projeto2 {
+    display: flex;
+}
+
+.compartilhamentogitprojeto2 {
+    display: flex;
+}
+
+/* ETAPA II-3 */
+
+.postsrecentes {
+    background-color: #302F3D;
+    box-sizing: border-box;
+    width: 952px;
+    height: 86px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #18181f;
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.postsrecentes p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;  
+    color: #a4a2b1;
+    word-spacing: -5px;
+}
+
+/* ETAPA II-4 */
+
+.ultimo-post {
+    width: 952px;
+    height: 201px;
+    background-color: ;
+    background-color: #302F3D;
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px #18181f;  
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+.imagem-ultimo-post {
+    width: 128px;
+    height: 128px;
+}
+
+.ultimo-post .imagem-ultimo-post img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+.escrita-ultimo-post {
+    display: flex;
+    flex-direction: column;
+    color: #837E9F;
+    width: 612px;
+    height: 129px;
+    margin: 20px;
+}
+
+.hashtags-ultimo-post ul {
+    display: flex;
+    list-style: none;
+    margin-left: -10px;
+}
+
+.hashtags-ultimo-post li {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.superior-ultimo-post {
+    margin-bottom: 10px;
+}
+
+.titulo-ultimo-post p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #a4a2b1;
+}
+
+.tempo-ultimo-post p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.conteudo-ultimo-post p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #a4a2b1;
+    word-spacing: -2px;
+}
+
+.hashtags-ultimo-post p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+}
+
